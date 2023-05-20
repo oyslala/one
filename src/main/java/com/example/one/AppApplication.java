@@ -16,15 +16,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-@EnableScheduling
-@EnableAsync
-@EnableConfigurationProperties
+@EnableSwagger2
 public class AppApplication extends SpringBootServletInitializer {
 
     private static Log logger = LogFactory.getLog(AppApplication.class);
