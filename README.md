@@ -14,10 +14,9 @@
  - 데이타베이스 설치 (postgres)
  - 테이블생성
     ```
-    CREATE TABLE tb_emp (
-      seq SERIAL PRIMARY KEY,
-      emp_id character varying(100) NOT NULL,
-      emp_name character varying(100) NOT NULL
+    CREATE TABLE tb_color (
+      color_id character varying(100) PRIMARY KEY,
+      color_name character varying(100) NOT NULL
     );
     ```
 
