@@ -1,9 +1,7 @@
 
 # 개발툴 설치
- - JDK 
- - Maven 
- - IntelliJ or Eclipse
- - GIT
+ - JDK 1.8+
+ - IntelliJ Community Edition(or Eclipse)
 <br/>
 
 # Rest API 호출하여 hello world 실행
