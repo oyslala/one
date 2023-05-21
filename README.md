@@ -17,7 +17,9 @@
          return "Hello " + name;
      }
      ```
- 
+ - HTTP Method에 대한 이해 : 
+    - @GetMapping, @PostMapping, @PutMapping,  @DeleteMapping
+    - @RequestParam, @PathVariable, @RequestParam, @ModelAttribute
 <br/>
 
 # 데이타생성
