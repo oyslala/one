@@ -4,6 +4,14 @@
  - IntelliJ Community Edition(or Eclipse)
 <br/>
 
+# 샘플소스 불러오기
+ - File > New > Project from version control...
+    - Repository Url
+        - version control : git
+        - Url : https://github.com/oyslala/one.git
+        - Directory : 설치할 디렉토리 선택
+<br/>
+
 # Rest API 호출하여 hello world 실행
  - MainController.java 
  - http://localhost:8080/hello?name=world 호출
