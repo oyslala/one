@@ -25,7 +25,7 @@
      ```
  - HTTP Method에 대한 이해 : 
     - @GetMapping, @PostMapping, @PutMapping, @DeleteMapping
-    - @RequestParam, @PathVariable, @RequestParam, @ModelAttribute
+    - @RequestParam, @PathVariable, @RequestBody, @ModelAttribute
 <br/>
 
 # 데이타생성
