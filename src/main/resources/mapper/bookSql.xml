@@ -6,10 +6,12 @@
 <mapper namespace="book">
     <insert id="insertBook">
         INSERT INTO tb_book
-            (isbn, link, image, author, discount, publisher, pubdate, description)
+            (isbn, title, link, image, author, discount, publisher, pubdate, description)
         VALUES
-            (#{isbn}, #{link}, #{image}, #{author}, #{discount}, #{publisher}, #{pubdate}, #{description})
+            (#{isbn}, #{title}, #{link}, #{image}, #{author}, #{discount}, #{publisher}, #{pubdate}, #{description})
         ON CONFLICT (isbn) DO UPDATE
             SET discount = #{discount}, pubdate = #{pubdate}
     </insert>
+
+
 </mapper>
