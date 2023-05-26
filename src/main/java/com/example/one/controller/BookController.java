@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.util.List;
 
 @RestController
 @RequestMapping("/book")
@@ -30,7 +31,7 @@ public class BookController {
 
     @GetMapping("/get")
     @ResponseBody
-    public String helloName(@RequestParam String query) throws IOException {
+    public String getBook(@RequestParam String query) throws IOException {
 
         String url = "https://openapi.naver.com/v1/search/book.json?query=" + query
                 + "&display=10&start=1&sort=sim";
@@ -52,5 +53,14 @@ public class BookController {
             sqlSessionTemplate.insert("book.insertBook", book);
         }
         return "Hello " + query;
+    }
+
+    @GetMapping("/list")
+    @ResponseBody
+    public List<Book> listBook(@RequestParam String query)  {
+
+        List<Book> books = sqlSessionTemplate.selectList("book.listBook", query);
+
+        return books;
     }
 }
