@@ -10,6 +10,6 @@
         VALUES
             (#{isbn}, #{link}, #{image}, #{author}, #{discount}, #{publisher}, #{pubdate}, #{description})
         ON CONFLICT (isbn) DO UPDATE
-            SET discount = #{discount}, pubdate = #{pubdate},
+            SET discount = #{discount}, pubdate = #{pubdate}
     </insert>
 </mapper>
